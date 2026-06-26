@@ -1,0 +1,21 @@
+# Corrida completa (make ci) — 2026-06-26T16:41:07Z
+
+[ok] 554 equipos escritos en /home/claude/network-ztp/inventory/devices.csv
+     acceso=48 agregacion=2 aps=500 gateways=2 firewalls=2
+
+  ✅ access_switch.j2     render OK (61 líneas) → evidence/rendered/access_switch.cfg
+  ✅ vsx.j2               render OK (514 líneas) → evidence/rendered/vsx.cfg
+  ✅ wlan_gateway.j2      render OK (103 líneas) → evidence/rendered/wlan_gateway.json
+  ✅ firewall.j2          render OK (62 líneas) → evidence/rendered/firewall.xml
+
+OK · 4/4 plantillas
+
+2026-06-26 16:41:07,913 INFO RESUMEN · total=554 · {'claimed': 552, 'skipped': 2}
+2026-06-26 16:41:07,974 INFO RESUMEN · 554 sanos · 0 con problemas (de 554)
+2026-06-26 16:41:08,021 INFO unidades de backup: 59 · fecha=2026-06-25 · modo=simulate
+2026-06-26 16:41:08,028 INFO backup OK · drift: 0 unidad(es) con cambios · 0 sin cambios
+2026-06-26 16:41:08,076 INFO unidades de backup: 59 · fecha=2026-06-26 · modo=simulate
+2026-06-26 16:41:08,087 INFO backup OK · drift: 1 unidad(es) con cambios · 58 sin cambios
+2026-06-26 16:41:08,149 INFO [simulado] ✅ *Aprovisionamiento* (simulate) · 552 claimed · 2 skipped · 0 failed
+2026-06-26 16:41:08,149 INFO [simulado] ⚠️ *Drift detectado* 2026-06-26 · 1 unidad(es) cambiaron fuera de IaC: agg-01
+2026-06-26 16:41:08,194 INFO RESUMEN · 1 restored · 0 failed

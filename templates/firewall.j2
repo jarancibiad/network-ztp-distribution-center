@@ -1,0 +1,76 @@
+{# ===========================================================================
+   Plantilla FIREWALL — Palo Alto PA-1420 (par HA activo/pasivo)
+   --------------------------------------------------------------------------
+   Render a comandos 'set' de PAN-OS (revisables; se aplican vía API/CLI o la
+   colección paloaltonetworks.panos). Se renderiza POR NODO para hostname/HA.
+   Aterriza todo lo diseñado: untrust (doble ISP, eBGP), trust en LAG al VSX
+   (iBGP), zonas, security policy (default-deny + excepción mgmt→Central) y NAT.
+   NOTA: sintaxis 'set' ilustrativa; validar contra la versión de PAN-OS.
+   =========================================================================== #}
+{# ---------------- Sistema ---------------- #}
+set deviceconfig system hostname {{ inventory_hostname }}
+set deviceconfig system dns-setting servers primary {{ dns_resolver_primary }}
+set deviceconfig system ntp-servers primary-ntp-server ntp-server-address {{ ntp_upstream }}
+
+{# ---------------- Interfaces ----------------
+   untrust: 2 enlaces a ISP-A/B. trust: LAG ae1 (eth1/3+1/4) al VSX. #}
+set network interface ethernet ethernet1/1 layer3 ip {{ isp_a.ip }}
+set network interface ethernet ethernet1/1 comment "{{ isp_a.name }}"
+set network interface ethernet ethernet1/2 layer3 ip {{ isp_b.ip }}
+set network interface ethernet ethernet1/2 comment "{{ isp_b.name }}"
+set network interface ethernet ethernet1/3 aggregate-group ae1
+set network interface ethernet ethernet1/4 aggregate-group ae1
+set network interface aggregate-ethernet ae1 layer3 ip {{ trust.ip }}
+set network interface aggregate-ethernet ae1 layer3 lacp enable yes
+set network interface aggregate-ethernet ae1 comment "TRUST-LAG-TO-VSX"
+
+{# ---------------- Zonas ----------------
+   untrust = Internet; trust = todo lo interno (llega ya enrutado del VSX). #}
+set zone untrust network layer3 [ ethernet1/1 ethernet1/2 ]
+set zone trust network layer3 ae1
+
+{# ---------------- Virtual router + BGP ----------------
+   eBGP a los ISP (failover automático) + iBGP al VSX (subredes internas). #}
+set network virtual-router default interface [ ethernet1/1 ethernet1/2 ae1 ]
+set network virtual-router default protocol bgp enable yes
+set network virtual-router default protocol bgp router-id {{ bgp_router_id }}
+set network virtual-router default protocol bgp local-as {{ bgp_local_as }}
+{# eBGP ISP-A #}
+set network virtual-router default protocol bgp peer-group ISP peer ISP-A peer-address ip {{ isp_a.peer_ip }}
+set network virtual-router default protocol bgp peer-group ISP peer ISP-A peer-as {{ isp_a.peer_as }}
+{# eBGP ISP-B #}
+set network virtual-router default protocol bgp peer-group ISP peer ISP-B peer-address ip {{ isp_b.peer_ip }}
+set network virtual-router default protocol bgp peer-group ISP peer ISP-B peer-as {{ isp_b.peer_as }}
+{# iBGP al VSX #}
+set network virtual-router default protocol bgp peer-group INTERNAL peer VSX peer-address ip {{ vsx_peer_ip }}
+set network virtual-router default protocol bgp peer-group INTERNAL peer VSX peer-as {{ bgp_local_as }}
+
+{# ---------------- Objetos de dirección ---------------- #}
+{% for a in address_objects %}
+set address {{ a.name }} ip-netmask {{ a.cidr }}
+{% endfor %}
+{# FQDN de Aruba Central (excepción de mgmt) como grupo de objetos fqdn #}
+{% for f in aruba_central_fqdns %}
+set address {{ f.name }} fqdn {{ f.fqdn }}
+{% endfor %}
+set address-group grp-aruba-central static [ {% for f in aruba_central_fqdns %}{{ f.name }} {% endfor %}]
+
+{# ---------------- Security policy (top-down, primer match) ----------------
+   Orden CRÍTICO: la excepción mgmt→Central va ANTES del deny de mgmt. #}
+{% for r in security_rules %}
+set rulebase security rules {{ r.name }} from {{ r.from }} to {{ r.to }} source {{ r.source }} destination {{ r.destination }} application [ {{ r.apps | join(' ') }} ] service {{ r.service | default('application-default') }} action {{ r.action }}
+set rulebase security rules {{ r.name }} log-end yes
+{% endfor %}
+
+{# ---------------- NAT (source NAT / PAT a la interfaz del ISP activo) ----------------
+   Cubre todo lo interno permitido hacia Internet (corp/guest/servers/mgmt→Central).
+   La política de seguridad controla QUÉ sale; el NAT solo traduce. #}
+set rulebase nat rules src-nat-internet from trust to untrust source any destination any service any source-translation dynamic-ip-and-port interface-address interface ethernet1/1
+set rulebase nat rules src-nat-internet description "PAT a IP del ISP activo (failover por BGP)"
+
+{# ---------------- HA (activo/pasivo) ---------------- #}
+set deviceconfig high-availability enabled yes
+set deviceconfig high-availability group group-id {{ ha.group_id }} mode active-passive
+set deviceconfig high-availability interface ha1 port {{ ha.ha1_port }}
+set deviceconfig high-availability interface ha2 port {{ ha.hsci_port }}
+set deviceconfig high-availability group group-id {{ ha.group_id }} peer-ip {{ ha.peer_ip }}

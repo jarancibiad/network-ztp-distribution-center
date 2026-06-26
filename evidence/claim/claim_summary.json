@@ -1,0 +1,30 @@
+{
+  "run": {
+    "timestamp": "2026-06-26T16:41:07+00:00",
+    "mode": "simulate"
+  },
+  "summary": {
+    "total": 554,
+    "by_status": {
+      "claimed": 552,
+      "skipped": 2
+    },
+    "by_type": {
+      "switch_agg": {
+        "claimed": 2
+      },
+      "switch_access": {
+        "claimed": 48
+      },
+      "ap": {
+        "claimed": 500
+      },
+      "gateway": {
+        "claimed": 2
+      },
+      "firewall": {
+        "skipped": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,5051 @@
+{
+  "timestamp": "2026-06-26T16:41:07+00:00",
+  "mode": "simulate",
+  "summary": {
+    "total": 554,
+    "healthy": 554,
+    "unhealthy": 0
+  },
+  "results": [
+    {
+      "hostname": "agg-01",
+      "role": "aggregation",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "vsx_paired": true
+      }
+    },
+    {
+      "hostname": "agg-02",
+      "role": "aggregation",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "vsx_paired": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r01-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r01-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r01-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r01-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r02-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r02-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r02-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r02-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r03-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r03-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r03-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r03-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r04-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r04-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r04-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r04-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r05-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r05-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r05-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r05-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r06-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r06-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r06-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r06-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r07-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r07-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r07-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r07-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r08-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r08-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r08-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r08-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r09-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r09-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r09-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r09-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r10-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r10-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r10-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r10-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r11-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r11-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r11-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r11-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r12-1",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r12-2",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r12-3",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "acc-sw-r12-4",
+      "role": "access",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "uplink_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0001",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0002",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0003",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0004",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0005",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0006",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0007",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0008",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0009",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0010",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0011",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0012",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0013",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0014",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0015",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0016",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0017",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0018",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0019",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0020",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0021",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0022",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0023",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0024",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0025",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0026",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0027",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0028",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0029",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0030",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0031",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0032",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0033",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0034",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0035",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0036",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0037",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0038",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0039",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0040",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0041",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0042",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0043",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0044",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0045",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0046",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0047",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0048",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0049",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0050",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0051",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0052",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0053",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0054",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0055",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0056",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0057",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0058",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0059",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0060",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0061",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0062",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0063",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0064",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0065",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0066",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0067",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0068",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0069",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0070",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0071",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0072",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0073",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0074",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0075",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0076",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0077",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0078",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0079",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0080",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0081",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0082",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0083",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0084",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0085",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0086",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0087",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0088",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0089",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0090",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0091",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0092",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0093",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0094",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0095",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0096",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0097",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0098",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0099",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0100",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0101",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0102",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0103",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0104",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0105",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0106",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0107",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0108",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0109",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0110",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0111",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0112",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0113",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0114",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0115",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0116",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0117",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0118",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0119",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0120",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0121",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0122",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0123",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0124",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0125",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0126",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0127",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0128",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0129",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0130",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0131",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0132",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0133",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0134",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0135",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0136",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0137",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0138",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0139",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0140",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0141",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0142",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0143",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0144",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0145",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0146",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0147",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0148",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0149",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0150",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0151",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0152",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0153",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0154",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0155",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0156",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0157",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0158",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0159",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0160",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0161",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0162",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0163",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0164",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0165",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0166",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0167",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0168",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0169",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0170",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0171",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0172",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0173",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0174",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0175",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0176",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0177",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0178",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0179",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0180",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0181",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0182",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0183",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0184",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0185",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0186",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0187",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0188",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0189",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0190",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0191",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0192",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0193",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0194",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0195",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0196",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0197",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0198",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0199",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0200",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0201",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0202",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0203",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0204",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0205",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0206",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0207",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0208",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0209",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0210",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0211",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0212",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0213",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0214",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0215",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0216",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0217",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0218",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0219",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0220",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0221",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0222",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0223",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0224",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0225",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0226",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0227",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0228",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0229",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0230",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0231",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0232",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0233",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0234",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0235",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0236",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0237",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0238",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0239",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0240",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0241",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0242",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0243",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0244",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0245",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0246",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0247",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0248",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0249",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0250",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0251",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0252",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0253",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0254",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0255",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0256",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0257",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0258",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0259",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0260",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0261",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0262",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0263",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0264",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0265",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0266",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0267",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0268",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0269",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0270",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0271",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0272",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0273",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0274",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0275",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0276",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0277",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0278",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0279",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-bod-0280",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0281",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0282",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0283",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0284",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0285",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0286",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0287",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0288",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0289",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0290",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0291",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0292",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0293",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0294",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0295",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0296",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0297",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0298",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0299",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0300",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0301",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0302",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0303",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0304",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0305",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0306",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0307",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0308",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0309",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0310",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0311",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0312",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0313",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0314",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0315",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0316",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0317",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0318",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0319",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0320",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0321",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0322",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0323",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0324",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0325",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0326",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0327",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0328",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0329",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0330",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0331",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0332",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0333",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0334",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0335",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0336",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0337",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0338",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0339",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0340",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0341",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0342",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0343",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0344",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0345",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0346",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0347",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0348",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0349",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0350",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0351",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0352",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0353",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0354",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0355",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0356",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0357",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0358",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0359",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-and-0360",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0361",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0362",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0363",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0364",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0365",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0366",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0367",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0368",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0369",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0370",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0371",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0372",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0373",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0374",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0375",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0376",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0377",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0378",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0379",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0380",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0381",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0382",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0383",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0384",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0385",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0386",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0387",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0388",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0389",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0390",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0391",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0392",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0393",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0394",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0395",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0396",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0397",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0398",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0399",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0400",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0401",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0402",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0403",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0404",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0405",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0406",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0407",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0408",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0409",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0410",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0411",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0412",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0413",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0414",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0415",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0416",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0417",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0418",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0419",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-ofi-0420",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0421",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0422",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0423",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0424",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0425",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0426",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0427",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0428",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0429",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0430",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0431",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0432",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0433",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0434",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0435",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0436",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0437",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0438",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0439",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0440",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0441",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0442",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0443",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0444",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0445",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0446",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0447",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0448",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0449",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0450",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0451",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0452",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0453",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0454",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0455",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0456",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0457",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0458",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0459",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0460",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0461",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0462",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0463",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0464",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0465",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0466",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0467",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0468",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0469",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-zon-0470",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0471",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0472",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0473",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0474",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0475",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0476",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0477",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0478",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0479",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0480",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0481",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0482",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0483",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0484",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0485",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0486",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0487",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0488",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0489",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0490",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0491",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0492",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0493",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0494",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0495",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0496",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0497",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0498",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0499",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "ap-per-0500",
+      "role": "wireless",
+      "healthy": true,
+      "checks": {
+        "central_synced": true,
+        "tunnels_up": true
+      }
+    },
+    {
+      "hostname": "gw-mob-01",
+      "role": "gateway",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "cluster_up": true
+      }
+    },
+    {
+      "hostname": "gw-mob-02",
+      "role": "gateway",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "central_synced": true,
+        "cluster_up": true
+      }
+    },
+    {
+      "hostname": "fw-perim-01",
+      "role": "firewall",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "panos_synced": true,
+        "ha_up": true
+      }
+    },
+    {
+      "hostname": "fw-perim-02",
+      "role": "firewall",
+      "healthy": true,
+      "checks": {
+        "mgmt_reachable": true,
+        "panos_synced": true,
+        "ha_up": true
+      }
+    }
+  ]
+}

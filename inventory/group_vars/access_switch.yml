@@ -1,0 +1,16 @@
+---
+# ===========================================================================
+# Variables del switch de ACCESO (templates/access_switch.j2)
+# Hereda de all.yml: site, dns_resolver_*, ntp_vsx_*, mgmt_*, snmp_user,
+# breakglass_user. Aquí van solo los ajustes propios del rol de acceso.
+# Lo per-equipo (inventory_hostname, mgmt_ip) viene del inventario.
+# ===========================================================================
+
+# Puertos cableados (1/1/13-24): DESHABILITADOS por defecto.
+# El enunciado no pide dispositivos cableados → no se inventa una VLAN.
+# Para activarlos en un caso real, descomentar (terminaría en el VSX):
+# wired_vlan: 21
+
+# Syslog externo: opcional. Por defecto el logging va a Aruba Central (nativo),
+# así que no se declara. Para enviar también a un colector propio, descomentar:
+# syslog_server: 10.20.20.10

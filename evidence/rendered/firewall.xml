@@ -1,0 +1,62 @@
+set deviceconfig system hostname fw-perim-01
+set deviceconfig system dns-setting servers primary 1.1.1.1
+set deviceconfig system ntp-servers primary-ntp-server ntp-server-address 1.1.1.1
+
+set network interface ethernet ethernet1/1 layer3 ip 200.1.1.2/30
+set network interface ethernet ethernet1/1 comment "ISP-A"
+set network interface ethernet ethernet1/2 layer3 ip 190.2.2.2/30
+set network interface ethernet ethernet1/2 comment "ISP-B"
+set network interface ethernet ethernet1/3 aggregate-group ae1
+set network interface ethernet ethernet1/4 aggregate-group ae1
+set network interface aggregate-ethernet ae1 layer3 ip 10.20.200.2/30
+set network interface aggregate-ethernet ae1 layer3 lacp enable yes
+set network interface aggregate-ethernet ae1 comment "TRUST-LAG-TO-VSX"
+
+set zone untrust network layer3 [ ethernet1/1 ethernet1/2 ]
+set zone trust network layer3 ae1
+
+set network virtual-router default interface [ ethernet1/1 ethernet1/2 ae1 ]
+set network virtual-router default protocol bgp enable yes
+set network virtual-router default protocol bgp router-id 10.20.200.2
+set network virtual-router default protocol bgp local-as 65010
+set network virtual-router default protocol bgp peer-group ISP peer ISP-A peer-address ip 200.1.1.1
+set network virtual-router default protocol bgp peer-group ISP peer ISP-A peer-as 64500
+set network virtual-router default protocol bgp peer-group ISP peer ISP-B peer-address ip 190.2.2.1
+set network virtual-router default protocol bgp peer-group ISP peer ISP-B peer-as 64501
+set network virtual-router default protocol bgp peer-group INTERNAL peer VSX peer-address ip 10.20.200.1
+set network virtual-router default protocol bgp peer-group INTERNAL peer VSX peer-as 65010
+
+set address subnet-corp ip-netmask 10.20.40.0/22
+set address subnet-wms ip-netmask 10.20.30.0/23
+set address subnet-guest ip-netmask 10.20.60.0/22
+set address subnet-servers ip-netmask 10.20.20.0/24
+set address subnet-mgmt ip-netmask 10.20.10.0/24
+set address subnet-apmgmt ip-netmask 10.20.16.0/22
+set address subnet-gwmgmt ip-netmask 10.20.12.0/24
+set address fqdn-aruba-activate fqdn device.arubanetworks.com
+set address fqdn-aruba-central fqdn *.central.arubanetworks.com
+set address-group grp-aruba-central static [ fqdn-aruba-activate fqdn-aruba-central ]
+
+set rulebase security rules mgmt-to-aruba-central from trust to untrust source [ subnet-mgmt subnet-apmgmt subnet-gwmgmt ] destination grp-aruba-central application [ ssl dns ntp ] service application-default action allow
+set rulebase security rules mgmt-to-aruba-central log-end yes
+set rulebase security rules corp-to-internet from trust to untrust source subnet-corp destination any application [ web-browsing ssl dns ] service application-default action allow
+set rulebase security rules corp-to-internet log-end yes
+set rulebase security rules guest-to-internet from trust to untrust source subnet-guest destination any application [ web-browsing ssl dns ] service application-default action allow
+set rulebase security rules guest-to-internet log-end yes
+set rulebase security rules servers-updates from trust to untrust source subnet-servers destination any application [ ssl ] service application-default action allow
+set rulebase security rules servers-updates log-end yes
+set rulebase security rules deny-wms-internet from trust to untrust source subnet-wms destination any application [ any ] service application-default action deny
+set rulebase security rules deny-wms-internet log-end yes
+set rulebase security rules deny-mgmt-internet from trust to untrust source [ subnet-mgmt subnet-apmgmt subnet-gwmgmt ] destination any application [ any ] service application-default action deny
+set rulebase security rules deny-mgmt-internet log-end yes
+set rulebase security rules deny-inbound from untrust to any source any destination any application [ any ] service application-default action deny
+set rulebase security rules deny-inbound log-end yes
+
+set rulebase nat rules src-nat-internet from trust to untrust source any destination any service any source-translation dynamic-ip-and-port interface-address interface ethernet1/1
+set rulebase nat rules src-nat-internet description "PAT a IP del ISP activo (failover por BGP)"
+
+set deviceconfig high-availability enabled yes
+set deviceconfig high-availability group group-id 1 mode active-passive
+set deviceconfig high-availability interface ha1 port ha1-a
+set deviceconfig high-availability interface ha2 port hsci
+set deviceconfig high-availability group group-id 1 peer-ip 10.20.255.2

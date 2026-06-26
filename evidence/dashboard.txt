@@ -1,0 +1,15 @@
+┌────────────────────────────────────────────────────┐
+ CD-PRINCIPAL · Estado de red
+├────────────────────────────────────────────────────┤
+ Aprovisionamiento  (simulate · 2026-06-26T16:41:07+00:00)
+   ✅ Agregación    2/2   claimed
+   ✅ Acceso       48/48  claimed
+   ✅ APs         500/500 claimed
+   ✅ Gateways      2/2   claimed
+   ✅ Firewall      0/2   claimed (PAN-OS)
+   ── TOTAL 552 claimed · 2 skipped · 0 failed
+├────────────────────────────────────────────────────┤
+ Backups / Drift    (2026-06-26 vs 2026-06-25)
+   ⚠️  1 con cambios · 58 sin cambios
+      → agg-01
+└────────────────────────────────────────────────────┘

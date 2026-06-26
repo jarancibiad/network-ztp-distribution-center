@@ -1,0 +1,4464 @@
+{
+  "run": {
+    "timestamp": "2026-06-26T16:41:07+00:00",
+    "mode": "simulate"
+  },
+  "summary": {
+    "total": 554,
+    "by_status": {
+      "claimed": 552,
+      "skipped": 2
+    },
+    "by_type": {
+      "switch_agg": {
+        "claimed": 2
+      },
+      "switch_access": {
+        "claimed": 48
+      },
+      "ap": {
+        "claimed": 500
+      },
+      "gateway": {
+        "claimed": 2
+      },
+      "firewall": {
+        "skipped": 2
+      }
+    }
+  },
+  "results": [
+    {
+      "serial": "CN83001AGGX",
+      "hostname": "agg-01",
+      "device_type": "switch_agg",
+      "role": "aggregation",
+      "status": "claimed",
+      "central_group": "grp-core"
+    },
+    {
+      "serial": "CN83002AGGX",
+      "hostname": "agg-02",
+      "device_type": "switch_agg",
+      "role": "aggregation",
+      "status": "claimed",
+      "central_group": "grp-core"
+    },
+    {
+      "serial": "CN63001ACCX",
+      "hostname": "acc-sw-r01-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63002ACCX",
+      "hostname": "acc-sw-r01-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63003ACCX",
+      "hostname": "acc-sw-r01-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63004ACCX",
+      "hostname": "acc-sw-r01-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63005ACCX",
+      "hostname": "acc-sw-r02-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63006ACCX",
+      "hostname": "acc-sw-r02-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63007ACCX",
+      "hostname": "acc-sw-r02-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63008ACCX",
+      "hostname": "acc-sw-r02-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63009ACCX",
+      "hostname": "acc-sw-r03-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63010ACCX",
+      "hostname": "acc-sw-r03-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63011ACCX",
+      "hostname": "acc-sw-r03-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63012ACCX",
+      "hostname": "acc-sw-r03-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63013ACCX",
+      "hostname": "acc-sw-r04-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63014ACCX",
+      "hostname": "acc-sw-r04-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63015ACCX",
+      "hostname": "acc-sw-r04-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63016ACCX",
+      "hostname": "acc-sw-r04-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63017ACCX",
+      "hostname": "acc-sw-r05-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63018ACCX",
+      "hostname": "acc-sw-r05-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63019ACCX",
+      "hostname": "acc-sw-r05-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63020ACCX",
+      "hostname": "acc-sw-r05-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63021ACCX",
+      "hostname": "acc-sw-r06-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63022ACCX",
+      "hostname": "acc-sw-r06-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63023ACCX",
+      "hostname": "acc-sw-r06-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63024ACCX",
+      "hostname": "acc-sw-r06-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63025ACCX",
+      "hostname": "acc-sw-r07-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63026ACCX",
+      "hostname": "acc-sw-r07-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63027ACCX",
+      "hostname": "acc-sw-r07-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63028ACCX",
+      "hostname": "acc-sw-r07-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63029ACCX",
+      "hostname": "acc-sw-r08-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63030ACCX",
+      "hostname": "acc-sw-r08-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63031ACCX",
+      "hostname": "acc-sw-r08-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63032ACCX",
+      "hostname": "acc-sw-r08-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63033ACCX",
+      "hostname": "acc-sw-r09-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63034ACCX",
+      "hostname": "acc-sw-r09-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63035ACCX",
+      "hostname": "acc-sw-r09-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63036ACCX",
+      "hostname": "acc-sw-r09-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63037ACCX",
+      "hostname": "acc-sw-r10-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63038ACCX",
+      "hostname": "acc-sw-r10-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63039ACCX",
+      "hostname": "acc-sw-r10-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63040ACCX",
+      "hostname": "acc-sw-r10-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63041ACCX",
+      "hostname": "acc-sw-r11-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63042ACCX",
+      "hostname": "acc-sw-r11-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63043ACCX",
+      "hostname": "acc-sw-r11-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63044ACCX",
+      "hostname": "acc-sw-r11-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63045ACCX",
+      "hostname": "acc-sw-r12-1",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63046ACCX",
+      "hostname": "acc-sw-r12-2",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63047ACCX",
+      "hostname": "acc-sw-r12-3",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CN63048ACCX",
+      "hostname": "acc-sw-r12-4",
+      "device_type": "switch_access",
+      "role": "access",
+      "status": "claimed",
+      "central_group": "grp-acceso"
+    },
+    {
+      "serial": "CNAP00001",
+      "hostname": "ap-bod-0001",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00002",
+      "hostname": "ap-bod-0002",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00003",
+      "hostname": "ap-bod-0003",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00004",
+      "hostname": "ap-bod-0004",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00005",
+      "hostname": "ap-bod-0005",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00006",
+      "hostname": "ap-bod-0006",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00007",
+      "hostname": "ap-bod-0007",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00008",
+      "hostname": "ap-bod-0008",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00009",
+      "hostname": "ap-bod-0009",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00010",
+      "hostname": "ap-bod-0010",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00011",
+      "hostname": "ap-bod-0011",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00012",
+      "hostname": "ap-bod-0012",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00013",
+      "hostname": "ap-bod-0013",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00014",
+      "hostname": "ap-bod-0014",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00015",
+      "hostname": "ap-bod-0015",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00016",
+      "hostname": "ap-bod-0016",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00017",
+      "hostname": "ap-bod-0017",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00018",
+      "hostname": "ap-bod-0018",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00019",
+      "hostname": "ap-bod-0019",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00020",
+      "hostname": "ap-bod-0020",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00021",
+      "hostname": "ap-bod-0021",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00022",
+      "hostname": "ap-bod-0022",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00023",
+      "hostname": "ap-bod-0023",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00024",
+      "hostname": "ap-bod-0024",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00025",
+      "hostname": "ap-bod-0025",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00026",
+      "hostname": "ap-bod-0026",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00027",
+      "hostname": "ap-bod-0027",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00028",
+      "hostname": "ap-bod-0028",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00029",
+      "hostname": "ap-bod-0029",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00030",
+      "hostname": "ap-bod-0030",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00031",
+      "hostname": "ap-bod-0031",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00032",
+      "hostname": "ap-bod-0032",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00033",
+      "hostname": "ap-bod-0033",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00034",
+      "hostname": "ap-bod-0034",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00035",
+      "hostname": "ap-bod-0035",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00036",
+      "hostname": "ap-bod-0036",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00037",
+      "hostname": "ap-bod-0037",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00038",
+      "hostname": "ap-bod-0038",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00039",
+      "hostname": "ap-bod-0039",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00040",
+      "hostname": "ap-bod-0040",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00041",
+      "hostname": "ap-bod-0041",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00042",
+      "hostname": "ap-bod-0042",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00043",
+      "hostname": "ap-bod-0043",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00044",
+      "hostname": "ap-bod-0044",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00045",
+      "hostname": "ap-bod-0045",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00046",
+      "hostname": "ap-bod-0046",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00047",
+      "hostname": "ap-bod-0047",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00048",
+      "hostname": "ap-bod-0048",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00049",
+      "hostname": "ap-bod-0049",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00050",
+      "hostname": "ap-bod-0050",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00051",
+      "hostname": "ap-bod-0051",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00052",
+      "hostname": "ap-bod-0052",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00053",
+      "hostname": "ap-bod-0053",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00054",
+      "hostname": "ap-bod-0054",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00055",
+      "hostname": "ap-bod-0055",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00056",
+      "hostname": "ap-bod-0056",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00057",
+      "hostname": "ap-bod-0057",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00058",
+      "hostname": "ap-bod-0058",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00059",
+      "hostname": "ap-bod-0059",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00060",
+      "hostname": "ap-bod-0060",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00061",
+      "hostname": "ap-bod-0061",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00062",
+      "hostname": "ap-bod-0062",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00063",
+      "hostname": "ap-bod-0063",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00064",
+      "hostname": "ap-bod-0064",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00065",
+      "hostname": "ap-bod-0065",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00066",
+      "hostname": "ap-bod-0066",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00067",
+      "hostname": "ap-bod-0067",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00068",
+      "hostname": "ap-bod-0068",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00069",
+      "hostname": "ap-bod-0069",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00070",
+      "hostname": "ap-bod-0070",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00071",
+      "hostname": "ap-bod-0071",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00072",
+      "hostname": "ap-bod-0072",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00073",
+      "hostname": "ap-bod-0073",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00074",
+      "hostname": "ap-bod-0074",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00075",
+      "hostname": "ap-bod-0075",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00076",
+      "hostname": "ap-bod-0076",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00077",
+      "hostname": "ap-bod-0077",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00078",
+      "hostname": "ap-bod-0078",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00079",
+      "hostname": "ap-bod-0079",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00080",
+      "hostname": "ap-bod-0080",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00081",
+      "hostname": "ap-bod-0081",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00082",
+      "hostname": "ap-bod-0082",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00083",
+      "hostname": "ap-bod-0083",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00084",
+      "hostname": "ap-bod-0084",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00085",
+      "hostname": "ap-bod-0085",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00086",
+      "hostname": "ap-bod-0086",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00087",
+      "hostname": "ap-bod-0087",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00088",
+      "hostname": "ap-bod-0088",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00089",
+      "hostname": "ap-bod-0089",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00090",
+      "hostname": "ap-bod-0090",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00091",
+      "hostname": "ap-bod-0091",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00092",
+      "hostname": "ap-bod-0092",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00093",
+      "hostname": "ap-bod-0093",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00094",
+      "hostname": "ap-bod-0094",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00095",
+      "hostname": "ap-bod-0095",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00096",
+      "hostname": "ap-bod-0096",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00097",
+      "hostname": "ap-bod-0097",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00098",
+      "hostname": "ap-bod-0098",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00099",
+      "hostname": "ap-bod-0099",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00100",
+      "hostname": "ap-bod-0100",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00101",
+      "hostname": "ap-bod-0101",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00102",
+      "hostname": "ap-bod-0102",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00103",
+      "hostname": "ap-bod-0103",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00104",
+      "hostname": "ap-bod-0104",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00105",
+      "hostname": "ap-bod-0105",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00106",
+      "hostname": "ap-bod-0106",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00107",
+      "hostname": "ap-bod-0107",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00108",
+      "hostname": "ap-bod-0108",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00109",
+      "hostname": "ap-bod-0109",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00110",
+      "hostname": "ap-bod-0110",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00111",
+      "hostname": "ap-bod-0111",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00112",
+      "hostname": "ap-bod-0112",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00113",
+      "hostname": "ap-bod-0113",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00114",
+      "hostname": "ap-bod-0114",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00115",
+      "hostname": "ap-bod-0115",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00116",
+      "hostname": "ap-bod-0116",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00117",
+      "hostname": "ap-bod-0117",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00118",
+      "hostname": "ap-bod-0118",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00119",
+      "hostname": "ap-bod-0119",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00120",
+      "hostname": "ap-bod-0120",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00121",
+      "hostname": "ap-bod-0121",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00122",
+      "hostname": "ap-bod-0122",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00123",
+      "hostname": "ap-bod-0123",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00124",
+      "hostname": "ap-bod-0124",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00125",
+      "hostname": "ap-bod-0125",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00126",
+      "hostname": "ap-bod-0126",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00127",
+      "hostname": "ap-bod-0127",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00128",
+      "hostname": "ap-bod-0128",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00129",
+      "hostname": "ap-bod-0129",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00130",
+      "hostname": "ap-bod-0130",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00131",
+      "hostname": "ap-bod-0131",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00132",
+      "hostname": "ap-bod-0132",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00133",
+      "hostname": "ap-bod-0133",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00134",
+      "hostname": "ap-bod-0134",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00135",
+      "hostname": "ap-bod-0135",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00136",
+      "hostname": "ap-bod-0136",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00137",
+      "hostname": "ap-bod-0137",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00138",
+      "hostname": "ap-bod-0138",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00139",
+      "hostname": "ap-bod-0139",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00140",
+      "hostname": "ap-bod-0140",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00141",
+      "hostname": "ap-bod-0141",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00142",
+      "hostname": "ap-bod-0142",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00143",
+      "hostname": "ap-bod-0143",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00144",
+      "hostname": "ap-bod-0144",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00145",
+      "hostname": "ap-bod-0145",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00146",
+      "hostname": "ap-bod-0146",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00147",
+      "hostname": "ap-bod-0147",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00148",
+      "hostname": "ap-bod-0148",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00149",
+      "hostname": "ap-bod-0149",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00150",
+      "hostname": "ap-bod-0150",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00151",
+      "hostname": "ap-bod-0151",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00152",
+      "hostname": "ap-bod-0152",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00153",
+      "hostname": "ap-bod-0153",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00154",
+      "hostname": "ap-bod-0154",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00155",
+      "hostname": "ap-bod-0155",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00156",
+      "hostname": "ap-bod-0156",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00157",
+      "hostname": "ap-bod-0157",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00158",
+      "hostname": "ap-bod-0158",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00159",
+      "hostname": "ap-bod-0159",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00160",
+      "hostname": "ap-bod-0160",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00161",
+      "hostname": "ap-bod-0161",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00162",
+      "hostname": "ap-bod-0162",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00163",
+      "hostname": "ap-bod-0163",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00164",
+      "hostname": "ap-bod-0164",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00165",
+      "hostname": "ap-bod-0165",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00166",
+      "hostname": "ap-bod-0166",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00167",
+      "hostname": "ap-bod-0167",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00168",
+      "hostname": "ap-bod-0168",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00169",
+      "hostname": "ap-bod-0169",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00170",
+      "hostname": "ap-bod-0170",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00171",
+      "hostname": "ap-bod-0171",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00172",
+      "hostname": "ap-bod-0172",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00173",
+      "hostname": "ap-bod-0173",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00174",
+      "hostname": "ap-bod-0174",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00175",
+      "hostname": "ap-bod-0175",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00176",
+      "hostname": "ap-bod-0176",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00177",
+      "hostname": "ap-bod-0177",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00178",
+      "hostname": "ap-bod-0178",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00179",
+      "hostname": "ap-bod-0179",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00180",
+      "hostname": "ap-bod-0180",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00181",
+      "hostname": "ap-bod-0181",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00182",
+      "hostname": "ap-bod-0182",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00183",
+      "hostname": "ap-bod-0183",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00184",
+      "hostname": "ap-bod-0184",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00185",
+      "hostname": "ap-bod-0185",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00186",
+      "hostname": "ap-bod-0186",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00187",
+      "hostname": "ap-bod-0187",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00188",
+      "hostname": "ap-bod-0188",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00189",
+      "hostname": "ap-bod-0189",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00190",
+      "hostname": "ap-bod-0190",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00191",
+      "hostname": "ap-bod-0191",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00192",
+      "hostname": "ap-bod-0192",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00193",
+      "hostname": "ap-bod-0193",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00194",
+      "hostname": "ap-bod-0194",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00195",
+      "hostname": "ap-bod-0195",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00196",
+      "hostname": "ap-bod-0196",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00197",
+      "hostname": "ap-bod-0197",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00198",
+      "hostname": "ap-bod-0198",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00199",
+      "hostname": "ap-bod-0199",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00200",
+      "hostname": "ap-bod-0200",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00201",
+      "hostname": "ap-bod-0201",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00202",
+      "hostname": "ap-bod-0202",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00203",
+      "hostname": "ap-bod-0203",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00204",
+      "hostname": "ap-bod-0204",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00205",
+      "hostname": "ap-bod-0205",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00206",
+      "hostname": "ap-bod-0206",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00207",
+      "hostname": "ap-bod-0207",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00208",
+      "hostname": "ap-bod-0208",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00209",
+      "hostname": "ap-bod-0209",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00210",
+      "hostname": "ap-bod-0210",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00211",
+      "hostname": "ap-bod-0211",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00212",
+      "hostname": "ap-bod-0212",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00213",
+      "hostname": "ap-bod-0213",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00214",
+      "hostname": "ap-bod-0214",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00215",
+      "hostname": "ap-bod-0215",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00216",
+      "hostname": "ap-bod-0216",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00217",
+      "hostname": "ap-bod-0217",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00218",
+      "hostname": "ap-bod-0218",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00219",
+      "hostname": "ap-bod-0219",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00220",
+      "hostname": "ap-bod-0220",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00221",
+      "hostname": "ap-bod-0221",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00222",
+      "hostname": "ap-bod-0222",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00223",
+      "hostname": "ap-bod-0223",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00224",
+      "hostname": "ap-bod-0224",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00225",
+      "hostname": "ap-bod-0225",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00226",
+      "hostname": "ap-bod-0226",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00227",
+      "hostname": "ap-bod-0227",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00228",
+      "hostname": "ap-bod-0228",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00229",
+      "hostname": "ap-bod-0229",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00230",
+      "hostname": "ap-bod-0230",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00231",
+      "hostname": "ap-bod-0231",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00232",
+      "hostname": "ap-bod-0232",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00233",
+      "hostname": "ap-bod-0233",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00234",
+      "hostname": "ap-bod-0234",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00235",
+      "hostname": "ap-bod-0235",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00236",
+      "hostname": "ap-bod-0236",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00237",
+      "hostname": "ap-bod-0237",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00238",
+      "hostname": "ap-bod-0238",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00239",
+      "hostname": "ap-bod-0239",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00240",
+      "hostname": "ap-bod-0240",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00241",
+      "hostname": "ap-bod-0241",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00242",
+      "hostname": "ap-bod-0242",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00243",
+      "hostname": "ap-bod-0243",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00244",
+      "hostname": "ap-bod-0244",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00245",
+      "hostname": "ap-bod-0245",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00246",
+      "hostname": "ap-bod-0246",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00247",
+      "hostname": "ap-bod-0247",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00248",
+      "hostname": "ap-bod-0248",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00249",
+      "hostname": "ap-bod-0249",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00250",
+      "hostname": "ap-bod-0250",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00251",
+      "hostname": "ap-bod-0251",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00252",
+      "hostname": "ap-bod-0252",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00253",
+      "hostname": "ap-bod-0253",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00254",
+      "hostname": "ap-bod-0254",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00255",
+      "hostname": "ap-bod-0255",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00256",
+      "hostname": "ap-bod-0256",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00257",
+      "hostname": "ap-bod-0257",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00258",
+      "hostname": "ap-bod-0258",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00259",
+      "hostname": "ap-bod-0259",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00260",
+      "hostname": "ap-bod-0260",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00261",
+      "hostname": "ap-bod-0261",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00262",
+      "hostname": "ap-bod-0262",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00263",
+      "hostname": "ap-bod-0263",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00264",
+      "hostname": "ap-bod-0264",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00265",
+      "hostname": "ap-bod-0265",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00266",
+      "hostname": "ap-bod-0266",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00267",
+      "hostname": "ap-bod-0267",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00268",
+      "hostname": "ap-bod-0268",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00269",
+      "hostname": "ap-bod-0269",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00270",
+      "hostname": "ap-bod-0270",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00271",
+      "hostname": "ap-bod-0271",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00272",
+      "hostname": "ap-bod-0272",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00273",
+      "hostname": "ap-bod-0273",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00274",
+      "hostname": "ap-bod-0274",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00275",
+      "hostname": "ap-bod-0275",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00276",
+      "hostname": "ap-bod-0276",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00277",
+      "hostname": "ap-bod-0277",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00278",
+      "hostname": "ap-bod-0278",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00279",
+      "hostname": "ap-bod-0279",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00280",
+      "hostname": "ap-bod-0280",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-bodega-principal"
+    },
+    {
+      "serial": "CNAP00281",
+      "hostname": "ap-and-0281",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00282",
+      "hostname": "ap-and-0282",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00283",
+      "hostname": "ap-and-0283",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00284",
+      "hostname": "ap-and-0284",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00285",
+      "hostname": "ap-and-0285",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00286",
+      "hostname": "ap-and-0286",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00287",
+      "hostname": "ap-and-0287",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00288",
+      "hostname": "ap-and-0288",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00289",
+      "hostname": "ap-and-0289",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00290",
+      "hostname": "ap-and-0290",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00291",
+      "hostname": "ap-and-0291",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00292",
+      "hostname": "ap-and-0292",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00293",
+      "hostname": "ap-and-0293",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00294",
+      "hostname": "ap-and-0294",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00295",
+      "hostname": "ap-and-0295",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00296",
+      "hostname": "ap-and-0296",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00297",
+      "hostname": "ap-and-0297",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00298",
+      "hostname": "ap-and-0298",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00299",
+      "hostname": "ap-and-0299",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00300",
+      "hostname": "ap-and-0300",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00301",
+      "hostname": "ap-and-0301",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00302",
+      "hostname": "ap-and-0302",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00303",
+      "hostname": "ap-and-0303",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00304",
+      "hostname": "ap-and-0304",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00305",
+      "hostname": "ap-and-0305",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00306",
+      "hostname": "ap-and-0306",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00307",
+      "hostname": "ap-and-0307",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00308",
+      "hostname": "ap-and-0308",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00309",
+      "hostname": "ap-and-0309",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00310",
+      "hostname": "ap-and-0310",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00311",
+      "hostname": "ap-and-0311",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00312",
+      "hostname": "ap-and-0312",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00313",
+      "hostname": "ap-and-0313",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00314",
+      "hostname": "ap-and-0314",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00315",
+      "hostname": "ap-and-0315",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00316",
+      "hostname": "ap-and-0316",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00317",
+      "hostname": "ap-and-0317",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00318",
+      "hostname": "ap-and-0318",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00319",
+      "hostname": "ap-and-0319",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00320",
+      "hostname": "ap-and-0320",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00321",
+      "hostname": "ap-and-0321",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00322",
+      "hostname": "ap-and-0322",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00323",
+      "hostname": "ap-and-0323",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00324",
+      "hostname": "ap-and-0324",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00325",
+      "hostname": "ap-and-0325",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00326",
+      "hostname": "ap-and-0326",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00327",
+      "hostname": "ap-and-0327",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00328",
+      "hostname": "ap-and-0328",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00329",
+      "hostname": "ap-and-0329",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00330",
+      "hostname": "ap-and-0330",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00331",
+      "hostname": "ap-and-0331",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00332",
+      "hostname": "ap-and-0332",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00333",
+      "hostname": "ap-and-0333",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00334",
+      "hostname": "ap-and-0334",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00335",
+      "hostname": "ap-and-0335",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00336",
+      "hostname": "ap-and-0336",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00337",
+      "hostname": "ap-and-0337",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00338",
+      "hostname": "ap-and-0338",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00339",
+      "hostname": "ap-and-0339",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00340",
+      "hostname": "ap-and-0340",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00341",
+      "hostname": "ap-and-0341",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00342",
+      "hostname": "ap-and-0342",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00343",
+      "hostname": "ap-and-0343",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00344",
+      "hostname": "ap-and-0344",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00345",
+      "hostname": "ap-and-0345",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00346",
+      "hostname": "ap-and-0346",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00347",
+      "hostname": "ap-and-0347",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00348",
+      "hostname": "ap-and-0348",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00349",
+      "hostname": "ap-and-0349",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00350",
+      "hostname": "ap-and-0350",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00351",
+      "hostname": "ap-and-0351",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00352",
+      "hostname": "ap-and-0352",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00353",
+      "hostname": "ap-and-0353",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00354",
+      "hostname": "ap-and-0354",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00355",
+      "hostname": "ap-and-0355",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00356",
+      "hostname": "ap-and-0356",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00357",
+      "hostname": "ap-and-0357",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00358",
+      "hostname": "ap-and-0358",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00359",
+      "hostname": "ap-and-0359",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00360",
+      "hostname": "ap-and-0360",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-andenes"
+    },
+    {
+      "serial": "CNAP00361",
+      "hostname": "ap-ofi-0361",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00362",
+      "hostname": "ap-ofi-0362",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00363",
+      "hostname": "ap-ofi-0363",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00364",
+      "hostname": "ap-ofi-0364",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00365",
+      "hostname": "ap-ofi-0365",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00366",
+      "hostname": "ap-ofi-0366",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00367",
+      "hostname": "ap-ofi-0367",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00368",
+      "hostname": "ap-ofi-0368",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00369",
+      "hostname": "ap-ofi-0369",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00370",
+      "hostname": "ap-ofi-0370",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00371",
+      "hostname": "ap-ofi-0371",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00372",
+      "hostname": "ap-ofi-0372",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00373",
+      "hostname": "ap-ofi-0373",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00374",
+      "hostname": "ap-ofi-0374",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00375",
+      "hostname": "ap-ofi-0375",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00376",
+      "hostname": "ap-ofi-0376",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00377",
+      "hostname": "ap-ofi-0377",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00378",
+      "hostname": "ap-ofi-0378",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00379",
+      "hostname": "ap-ofi-0379",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00380",
+      "hostname": "ap-ofi-0380",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00381",
+      "hostname": "ap-ofi-0381",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00382",
+      "hostname": "ap-ofi-0382",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00383",
+      "hostname": "ap-ofi-0383",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00384",
+      "hostname": "ap-ofi-0384",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00385",
+      "hostname": "ap-ofi-0385",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00386",
+      "hostname": "ap-ofi-0386",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00387",
+      "hostname": "ap-ofi-0387",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00388",
+      "hostname": "ap-ofi-0388",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00389",
+      "hostname": "ap-ofi-0389",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00390",
+      "hostname": "ap-ofi-0390",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00391",
+      "hostname": "ap-ofi-0391",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00392",
+      "hostname": "ap-ofi-0392",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00393",
+      "hostname": "ap-ofi-0393",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00394",
+      "hostname": "ap-ofi-0394",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00395",
+      "hostname": "ap-ofi-0395",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00396",
+      "hostname": "ap-ofi-0396",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00397",
+      "hostname": "ap-ofi-0397",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00398",
+      "hostname": "ap-ofi-0398",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00399",
+      "hostname": "ap-ofi-0399",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00400",
+      "hostname": "ap-ofi-0400",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00401",
+      "hostname": "ap-ofi-0401",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00402",
+      "hostname": "ap-ofi-0402",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00403",
+      "hostname": "ap-ofi-0403",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00404",
+      "hostname": "ap-ofi-0404",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00405",
+      "hostname": "ap-ofi-0405",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00406",
+      "hostname": "ap-ofi-0406",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00407",
+      "hostname": "ap-ofi-0407",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00408",
+      "hostname": "ap-ofi-0408",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00409",
+      "hostname": "ap-ofi-0409",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00410",
+      "hostname": "ap-ofi-0410",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00411",
+      "hostname": "ap-ofi-0411",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00412",
+      "hostname": "ap-ofi-0412",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00413",
+      "hostname": "ap-ofi-0413",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00414",
+      "hostname": "ap-ofi-0414",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00415",
+      "hostname": "ap-ofi-0415",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00416",
+      "hostname": "ap-ofi-0416",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00417",
+      "hostname": "ap-ofi-0417",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00418",
+      "hostname": "ap-ofi-0418",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00419",
+      "hostname": "ap-ofi-0419",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00420",
+      "hostname": "ap-ofi-0420",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-oficinas"
+    },
+    {
+      "serial": "CNAP00421",
+      "hostname": "ap-zon-0421",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00422",
+      "hostname": "ap-zon-0422",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00423",
+      "hostname": "ap-zon-0423",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00424",
+      "hostname": "ap-zon-0424",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00425",
+      "hostname": "ap-zon-0425",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00426",
+      "hostname": "ap-zon-0426",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00427",
+      "hostname": "ap-zon-0427",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00428",
+      "hostname": "ap-zon-0428",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00429",
+      "hostname": "ap-zon-0429",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00430",
+      "hostname": "ap-zon-0430",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00431",
+      "hostname": "ap-zon-0431",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00432",
+      "hostname": "ap-zon-0432",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00433",
+      "hostname": "ap-zon-0433",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00434",
+      "hostname": "ap-zon-0434",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00435",
+      "hostname": "ap-zon-0435",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00436",
+      "hostname": "ap-zon-0436",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00437",
+      "hostname": "ap-zon-0437",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00438",
+      "hostname": "ap-zon-0438",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00439",
+      "hostname": "ap-zon-0439",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00440",
+      "hostname": "ap-zon-0440",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00441",
+      "hostname": "ap-zon-0441",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00442",
+      "hostname": "ap-zon-0442",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00443",
+      "hostname": "ap-zon-0443",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00444",
+      "hostname": "ap-zon-0444",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00445",
+      "hostname": "ap-zon-0445",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00446",
+      "hostname": "ap-zon-0446",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00447",
+      "hostname": "ap-zon-0447",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00448",
+      "hostname": "ap-zon-0448",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00449",
+      "hostname": "ap-zon-0449",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00450",
+      "hostname": "ap-zon-0450",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00451",
+      "hostname": "ap-zon-0451",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00452",
+      "hostname": "ap-zon-0452",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00453",
+      "hostname": "ap-zon-0453",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00454",
+      "hostname": "ap-zon-0454",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00455",
+      "hostname": "ap-zon-0455",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00456",
+      "hostname": "ap-zon-0456",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00457",
+      "hostname": "ap-zon-0457",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00458",
+      "hostname": "ap-zon-0458",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00459",
+      "hostname": "ap-zon-0459",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00460",
+      "hostname": "ap-zon-0460",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00461",
+      "hostname": "ap-zon-0461",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00462",
+      "hostname": "ap-zon-0462",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00463",
+      "hostname": "ap-zon-0463",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00464",
+      "hostname": "ap-zon-0464",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00465",
+      "hostname": "ap-zon-0465",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00466",
+      "hostname": "ap-zon-0466",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00467",
+      "hostname": "ap-zon-0467",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00468",
+      "hostname": "ap-zon-0468",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00469",
+      "hostname": "ap-zon-0469",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00470",
+      "hostname": "ap-zon-0470",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-zonas-comunes"
+    },
+    {
+      "serial": "CNAP00471",
+      "hostname": "ap-per-0471",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00472",
+      "hostname": "ap-per-0472",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00473",
+      "hostname": "ap-per-0473",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00474",
+      "hostname": "ap-per-0474",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00475",
+      "hostname": "ap-per-0475",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00476",
+      "hostname": "ap-per-0476",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00477",
+      "hostname": "ap-per-0477",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00478",
+      "hostname": "ap-per-0478",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00479",
+      "hostname": "ap-per-0479",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00480",
+      "hostname": "ap-per-0480",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00481",
+      "hostname": "ap-per-0481",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00482",
+      "hostname": "ap-per-0482",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00483",
+      "hostname": "ap-per-0483",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00484",
+      "hostname": "ap-per-0484",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00485",
+      "hostname": "ap-per-0485",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00486",
+      "hostname": "ap-per-0486",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00487",
+      "hostname": "ap-per-0487",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00488",
+      "hostname": "ap-per-0488",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00489",
+      "hostname": "ap-per-0489",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00490",
+      "hostname": "ap-per-0490",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00491",
+      "hostname": "ap-per-0491",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00492",
+      "hostname": "ap-per-0492",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00493",
+      "hostname": "ap-per-0493",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00494",
+      "hostname": "ap-per-0494",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00495",
+      "hostname": "ap-per-0495",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00496",
+      "hostname": "ap-per-0496",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00497",
+      "hostname": "ap-per-0497",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00498",
+      "hostname": "ap-per-0498",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00499",
+      "hostname": "ap-per-0499",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CNAP00500",
+      "hostname": "ap-per-0500",
+      "device_type": "ap",
+      "role": "ap",
+      "status": "claimed",
+      "central_group": "grp-aps-perimetro"
+    },
+    {
+      "serial": "CN90001GWMB",
+      "hostname": "gw-mob-01",
+      "device_type": "gateway",
+      "role": "gateway",
+      "status": "claimed",
+      "central_group": "grp-gateways"
+    },
+    {
+      "serial": "CN90002GWMB",
+      "hostname": "gw-mob-02",
+      "device_type": "gateway",
+      "role": "gateway",
+      "status": "claimed",
+      "central_group": "grp-gateways"
+    },
+    {
+      "serial": "PA14001FWPB",
+      "hostname": "fw-perim-01",
+      "device_type": "firewall",
+      "role": "perimeter",
+      "status": "skipped",
+      "reason": "gesti\u00f3n directa PAN-OS (no Central)"
+    },
+    {
+      "serial": "PA14002FWPB",
+      "hostname": "fw-perim-02",
+      "device_type": "firewall",
+      "role": "perimeter",
+      "status": "skipped",
+      "reason": "gesti\u00f3n directa PAN-OS (no Central)"
+    }
+  ]
+}

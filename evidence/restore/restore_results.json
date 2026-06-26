@@ -1,0 +1,14 @@
+{
+  "restored_from": "2026-06-26",
+  "timestamp": "2026-06-26T16:41:08+00:00",
+  "mode": "simulate",
+  "results": [
+    {
+      "unit": "agg-01",
+      "role": "aggregation",
+      "method": "re-aplicar template group en Central",
+      "status": "restored",
+      "source": "2026-06-26/aggregation/agg-01.cfg"
+    }
+  ]
+}

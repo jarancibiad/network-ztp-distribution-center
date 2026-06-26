@@ -1,0 +1,103 @@
+{
+  "site": "CD-PRINCIPAL",
+  "country_code": "CL",
+
+  "gateway_cluster": {
+    "name": "cl-mob-cd",
+    "persona": "mobility",
+    "members": ["gw-mob-01", "gw-mob-02"],
+    "redundancy": "active-active",
+    "uplink": {
+      "type": "lag-to-vsx",
+      "vlans_trunked": [30, 40, 60, 12],
+      "lacp": true
+    }
+  },
+
+  "l3_interfaces": [
+    {
+      "vlan": 30,
+      "name": "WMS",
+      "ip": "10.20.30.1",
+      "mask": "255.255.254.0",
+      "role": "user-gateway"
+    },
+    {
+      "vlan": 40,
+      "name": "CORP",
+      "ip": "10.20.40.1",
+      "mask": "255.255.252.0",
+      "role": "user-gateway"
+    },
+    {
+      "vlan": 60,
+      "name": "GUEST",
+      "ip": "10.20.60.1",
+      "mask": "255.255.252.0",
+      "role": "user-gateway"
+    }
+  ],
+
+  "rf": {
+    "bands_enabled": ["2.4ghz", "5ghz", "6ghz"],
+    "channel_assignment": "airmatch-automatic",
+    "channel_width": {
+      "2.4ghz": "20mhz",
+      "5ghz": "40mhz",
+      "6ghz": "40mhz"
+    },
+    "airmatch": { "enabled": true, "optimization": "interference" }
+  },
+
+  "wlans": [
+    {
+      "name": "MELI-CORP",
+      "essid": "MELI-CORP",
+      "forward_mode": "tunnel",
+      "vlan": 40,
+      "opmode": "wpa3-sae",
+      "passphrase_secret": "REF:vault/corp_psk",
+      "hide_ssid": false,
+      "broadcast_filter": "arp",
+      "bands": ["5ghz", "6ghz"],
+      "max_clients_per_radio": 128
+    },
+    {
+      "name": "MELI-WMS",
+      "essid": "MELI-WMS",
+      "forward_mode": "tunnel",
+      "vlan": 30,
+      "opmode": "wpa3-sae",
+      "passphrase_secret": "REF:vault/wms_psk",
+      "hide_ssid": false,
+      "broadcast_filter": "arp",
+      "bands": ["2.4ghz", "5ghz"],
+      "max_clients_per_radio": 128
+    },
+    {
+      "name": "MELI-GUEST",
+      "essid": "MELI-GUEST",
+      "forward_mode": "tunnel",
+      "vlan": 60,
+      "opmode": "wpa2-psk",
+      "passphrase_secret": "REF:vault/guest_psk",
+      "hide_ssid": false,
+      "broadcast_filter": "all",
+      "bands": ["2.4ghz", "5ghz"],
+      "max_clients_per_radio": 128
+    }
+  ],
+
+  "ap_groups": [
+    { "name": "grp-aps-bodega-principal", "zone": "bodega-principal", "rf_profile": "high-density" },
+    { "name": "grp-aps-andenes", "zone": "andenes", "rf_profile": "high-density" },
+    { "name": "grp-aps-oficinas", "zone": "oficinas", "rf_profile": "high-density" },
+    { "name": "grp-aps-zonas-comunes", "zone": "zonas-comunes", "rf_profile": "high-density" },
+    { "name": "grp-aps-perimetro", "zone": "perimetro", "rf_profile": "high-density" }
+  ],
+
+  "routing": {
+    "default_gateway": "10.20.210.1",
+    "note": "el 9012 enruta entre VLAN wireless; lo demás sale al VSX (estático)"
+  }
+}

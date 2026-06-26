@@ -1,0 +1,118 @@
+{# ===========================================================================
+   Plantilla switch de ACCESO — Aruba CX 6300 (24p PoE+), AOS-CX
+   --------------------------------------------------------------------------
+   Render por equipo: hostname/mgmt_ip vienen del inventario (serial→identidad).
+   Uso: se sube como TEMPLATE GROUP de Aruba Central (ZTP por número de serie).
+
+   Servicios (decisión "todo en Aruba", sin servidores inventados):
+     - NTP    -> el VSX es el servidor NTP del fleet
+     - DNS    -> resolver público (regla acotada en el firewall); un switch
+                 no es servidor DNS
+     - Syslog/SNMP -> Aruba Central (recolección nativa)
+     - AAA admin   -> Central (RBAC/SSO) + cuenta LOCAL de break-glass
+                      (sin RADIUS/TACACS+; ClearPass quedaría fuera de alcance)
+   =========================================================================== #}
+hostname {{ inventory_hostname }}
+
+{# ---- DNS (resolver público; necesario para resolver el FQDN de Central) ---- #}
+ip dns server-address {{ dns_resolver_primary }}
+ip dns server-address {{ dns_resolver_secondary }}
+
+{# ---- NTP (fuente = VSX) ---- #}
+ntp server {{ ntp_vsx_primary }}
+ntp server {{ ntp_vsx_secondary }}
+ntp enable
+
+{# ---- VLANs presentes en el acceso ----
+   Solo infra + AP-MGMT + native. Las VLAN de usuario wireless (30/40/60)
+   NO existen aquí: terminan en el clúster 9012 vía túnel. #}
+vlan 10
+    name MGMT
+vlan 11
+    name AP-MGMT
+vlan 99
+    name NATIVE-BLACKHOLE
+{% if wired_vlan is defined %}
+vlan {{ wired_vlan }}
+    name WIRED-ACCESS
+{% endif %}
+
+{# ---- SVI de gestión (in-band, VLAN 10) ---- #}
+interface vlan 10
+    ip address {{ mgmt_ip }}/{{ mgmt_prefix }}
+    no shutdown
+ip route 0.0.0.0/0 {{ mgmt_gateway }}      {# gateway = active-gateway del VSX #}
+
+{# ---- Puertos de AP (1/1/1-12): acceso VLAN 11 + PoE + LLDP + hardening ---- #}
+interface 1/1/1-1/1/12
+    description AP-635
+    no routing
+    vlan access 11
+    power-over-ethernet
+    poe-priority high
+    lldp transmit
+    lldp receive
+    lldp med-tlv-select poe
+    spanning-tree bpdu-guard
+    spanning-tree port-type admin-edge
+    loop-protect
+    port-access port-security
+        client-limit 1                     {# solo la MAC del AP; usuarios van por el túnel #}
+        enable
+    no shutdown
+
+{# ---- Puertos cableados (1/1/13-24): deshabilitados por defecto ----
+   El enunciado no pide dispositivos cableados. Se activan solo si se declara
+   'wired_vlan' (terminaría en el VSX). Disciplina: no inventar requisitos. #}
+{% if wired_vlan is defined %}
+interface 1/1/13-1/1/24
+    description WIRED-ACCESS
+    no routing
+    vlan access {{ wired_vlan }}
+    spanning-tree bpdu-guard
+    spanning-tree port-type admin-edge
+    loop-protect
+    port-access port-security
+        client-limit 3
+        enable
+    no shutdown
+{% else %}
+interface 1/1/13-1/1/24
+    description UNUSED
+    shutdown
+{% endif %}
+
+{# ---- Uplink MC-LAG al VSX (miembros 1/1/25-26) ----
+   En el acceso es un LAG/LACP normal; la "multi-chassis" se configura del lado
+   VSX. Trunk lleva SOLO mgmt(10), AP-MGMT(11) [y wired]; NUNCA 30/40/60. #}
+interface lag 1
+    description UPLINK-TO-VSX
+    no routing
+    vlan trunk native 99
+    vlan trunk allowed 10,11{% if wired_vlan is defined %},{{ wired_vlan }}{% endif %}
+    lacp mode active
+interface 1/1/25-1/1/26
+    description UPLINK-MEMBER
+    lag 1
+    no shutdown
+
+{# ---- Spanning-tree (MSTP) ---- #}
+spanning-tree
+spanning-tree mode mstp
+spanning-tree config-name {{ site }}
+
+{# ---- AAA admin: cuenta LOCAL de break-glass (respaldo si Central no responde) ----
+   La operación normal es vía Aruba Central (RBAC/SSO). Sin RADIUS/TACACS+. #}
+user {{ breakglass_user }} group administrators password ciphertext {{ vault_breakglass_pass }}
+
+{# ---- SNMPv3 (solo lectura, hacia Central/monitoreo) ---- #}
+snmpv3 user {{ snmp_user }} auth sha auth-pass plaintext {{ vault_snmp_auth }} priv aes priv-pass plaintext {{ vault_snmp_priv }}
+
+{# ---- Acceso seguro ---- #}
+ssh server vrf default
+no telnet-server
+
+{# ---- Logging hacia Central es nativo; syslog externo solo si se declara ---- #}
+{% if syslog_server is defined %}
+logging {{ syslog_server }}
+{% endif %}

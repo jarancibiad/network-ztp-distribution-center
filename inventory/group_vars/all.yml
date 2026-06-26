@@ -1,0 +1,45 @@
+---
+# ===========================================================================
+# Variables globales del sitio — Nuevo sector del CD
+# Heredadas por todas las plantillas. Los valores per-equipo (hostname,
+# mgmt_ip) viven en el inventario (serial → identidad), no aquí.
+# ===========================================================================
+site: CD-PRINCIPAL
+supernet: 10.20.0.0/16
+
+# ---- Servicios de red (decisión "todo en Aruba", sin servidores inventados) ----
+# DNS: resolver público (un switch no es DNS server); el firewall permite la
+#      salida acotada a estos resolvers.
+dns_resolver_primary: 1.1.1.1
+dns_resolver_secondary: 9.9.9.9
+
+# NTP: el VSX es el servidor NTP del fleet (IPs de gestión de los dos nodos).
+ntp_vsx_primary: 10.20.10.2        # agg-01 (mgmt)
+ntp_vsx_secondary: 10.20.10.3      # agg-02 (mgmt)
+
+# ---- Gestión (VLAN 10) ----
+mgmt_vlan: 10
+mgmt_prefix: 24
+mgmt_gateway: 10.20.10.1           # active-gateway virtual del par VSX
+
+# ---- AAA admin ----
+# Operación normal vía Aruba Central (RBAC/SSO). Cuenta local solo de break-glass.
+breakglass_user: admin-bg
+
+# ---- SNMPv3 (solo lectura, hacia Central/monitoreo) ----
+snmp_user: meli-ro
+
+# NOTA: secretos NO en claro. Se inyectan desde un vault de secretos o
+# GitHub Secrets: vault_breakglass_pass, vault_snmp_auth, vault_snmp_priv.
+
+# ---- Fuente única de VLANs (referencia para plantillas, IaC y docs) ----
+# l3 = dónde vive el default gateway de la VLAN.
+vlans:
+  - { id: 10, name: MGMT,             subnet: 10.20.10.0/24, l3: vsx }
+  - { id: 11, name: AP-MGMT,          subnet: 10.20.16.0/22, l3: vsx }
+  - { id: 12, name: GW-MGMT,          subnet: 10.20.12.0/24, l3: vsx }
+  - { id: 20, name: SERVERS,          subnet: 10.20.20.0/24, l3: vsx }
+  - { id: 30, name: WMS,              subnet: 10.20.30.0/23, l3: gw9012 }
+  - { id: 40, name: CORP,             subnet: 10.20.40.0/22, l3: gw9012 }
+  - { id: 60, name: GUEST,            subnet: 10.20.60.0/22, l3: gw9012 }
+  - { id: 99, name: NATIVE-BLACKHOLE, subnet: null,          l3: none }

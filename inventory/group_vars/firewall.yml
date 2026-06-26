@@ -1,0 +1,86 @@
+---
+# ===========================================================================
+# Variables del FIREWALL (templates/firewall.j2) — Palo Alto PA-1420 HA
+# Hereda de all.yml: dns_resolver_primary. IPs públicas = placeholders del ISP.
+# ===========================================================================
+ntp_upstream: 1.1.1.1
+
+# ---- Interfaces ----
+isp_a: { name: ISP-A, ip: 200.1.1.2/30, peer_ip: 200.1.1.1, peer_as: 64500 }   # untrust eth1/1 (eBGP)
+isp_b: { name: ISP-B, ip: 190.2.2.2/30, peer_ip: 190.2.2.1, peer_as: 64501 }   # untrust eth1/2 (eBGP)
+trust: { ip: 10.20.200.2/30 }                                                  # ae1 (LAG al VSX)
+
+# ---- BGP ----
+bgp_local_as: 65010          # ASN privado interno (iBGP con el VSX)
+vsx_peer_ip: 10.20.200.1     # iBGP neighbor = VSX
+# bgp_router_id va per-nodo (host_vars): fw-perim-01=10.20.200.2, etc.
+
+# ---- HA (per-nodo: peer_ip apunta al otro firewall) ----
+ha: { group_id: 1, ha1_port: ha1-a, hsci_port: hsci, peer_ip: 10.20.255.2 }
+
+# ---- Objetos de dirección ----
+address_objects:
+  - { name: subnet-corp,    cidr: 10.20.40.0/22 }
+  - { name: subnet-wms,     cidr: 10.20.30.0/23 }
+  - { name: subnet-guest,   cidr: 10.20.60.0/22 }
+  - { name: subnet-servers, cidr: 10.20.20.0/24 }
+  - { name: subnet-mgmt,    cidr: 10.20.10.0/24 }
+  - { name: subnet-apmgmt,  cidr: 10.20.16.0/22 }
+  - { name: subnet-gwmgmt,  cidr: 10.20.12.0/24 }
+
+# FQDN de Aruba Central (destino permitido para el plano de gestión)
+aruba_central_fqdns:
+  - { name: fqdn-aruba-activate, fqdn: device.arubanetworks.com }
+  - { name: fqdn-aruba-central,  fqdn: "*.central.arubanetworks.com" }
+
+# ---- Security policy (ORDEN IMPORTA: excepción mgmt→Central ANTES del deny) ----
+security_rules:
+  - name: mgmt-to-aruba-central
+    from: trust
+    to: untrust
+    source: "[ subnet-mgmt subnet-apmgmt subnet-gwmgmt ]"
+    destination: grp-aruba-central
+    apps: [ssl, dns, ntp]
+    action: allow
+  - name: corp-to-internet
+    from: trust
+    to: untrust
+    source: subnet-corp
+    destination: any
+    apps: [web-browsing, ssl, dns]
+    action: allow
+  - name: guest-to-internet
+    from: trust
+    to: untrust
+    source: subnet-guest
+    destination: any
+    apps: [web-browsing, ssl, dns]
+    action: allow
+  - name: servers-updates
+    from: trust
+    to: untrust
+    source: subnet-servers
+    destination: any
+    apps: [ssl]
+    action: allow
+  - name: deny-wms-internet
+    from: trust
+    to: untrust
+    source: subnet-wms
+    destination: any
+    apps: [any]
+    action: deny
+  - name: deny-mgmt-internet
+    from: trust
+    to: untrust
+    source: "[ subnet-mgmt subnet-apmgmt subnet-gwmgmt ]"
+    destination: any
+    apps: [any]
+    action: deny
+  - name: deny-inbound
+    from: untrust
+    to: any
+    source: any
+    destination: any
+    apps: [any]
+    action: deny

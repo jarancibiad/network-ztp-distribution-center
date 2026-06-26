@@ -1,0 +1,137 @@
+{# ===========================================================================
+   Plantilla AGREGACIÓN — par VSX (2× Aruba CX 8325-48Y8C), AOS-CX
+   --------------------------------------------------------------------------
+   Se renderiza POR NODO (vsx_role = primary|secondary). El VSX sincroniza la
+   mayor parte de la config; lo per-nodo es: role, IP de gestión/SVIs reales y
+   el keepalive.
+   L3: el VSX enruta las VLAN CABLEADAS (10/11/12/20). Las wireless (30/40/60)
+   las enruta el clúster 9012; el VSX solo tiene RUTAS ESTÁTICAS hacia ellas.
+   =========================================================================== #}
+hostname {{ inventory_hostname }}
+
+{# ---- DNS / NTP (el VSX es el servidor NTP del fleet; sincroniza de upstream) ---- #}
+ip dns server-address {{ dns_resolver_primary }}
+ntp server {{ ntp_upstream }}              {# salida NTP acotada permitida en el firewall #}
+ntp enable
+
+{# ---- VLANs en el VSX: infra + native (NO 30/40/60: son wireless, van al 9012) ---- #}
+vlan 10
+    name MGMT
+vlan 11
+    name AP-MGMT
+vlan 12
+    name GW-MGMT
+vlan 20
+    name SERVERS
+vlan 99
+    name NATIVE-BLACKHOLE
+
+{# ===================== VSX PAIRING ===================== #}
+interface lag 256
+    description VSX-ISL
+    no shutdown
+    no routing
+    vlan trunk native 1 tag
+    vlan trunk allowed all
+    lacp mode active
+interface 1/1/49,1/1/50                     {# 2× 100G para el ISL #}
+    lag 256
+vsx
+    system-mac 02:01:00:00:01:00
+    inter-switch-link lag 256
+    role {{ vsx_role }}                      {# primary en agg-01, secondary en agg-02 #}
+    keepalive peer {{ vsx_keepalive_peer }} source {{ vsx_keepalive_src }} vrf mgmt
+    vsx-sync vlans aaa snmp ssh time
+
+{# ===================== SVIs (default gateway con ACTIVE-GATEWAY) =====================
+   active-gateway = IP/MAC virtual servida por AMBOS nodos (gateway redundante). #}
+{% set active_mac = '02:00:00:00:00:01' %}
+interface vlan 10
+    ip address {{ svi_mgmt_ip }}/24          {# IP real del nodo: .2 / .3 #}
+    active-gateway ip 10.20.10.1 mac {{ active_mac }}
+interface vlan 11
+    ip address {{ svi_apmgmt_ip }}/22
+    active-gateway ip 10.20.16.1 mac {{ active_mac }}
+interface vlan 12
+    ip address {{ svi_gwmgmt_ip }}/24
+    active-gateway ip 10.20.12.1 mac {{ active_mac }}
+interface vlan 20
+    ip address {{ svi_servers_ip }}/24
+    active-gateway ip 10.20.20.1 mac {{ active_mac }}
+
+{# ---- DHCP server local para AP-MGMT (los 500 APs toman IP aquí) ----
+   VLAN 11 = 10.20.16.0/22. El rango entregable EXCLUYE el gateway y las IPs
+   de gestión de los nodos VSX (cinturón y tirantes). #}
+dhcp-server vrf default
+    pool AP-MGMT
+        range 10.20.16.50 10.20.19.250      {# arranca en .50: deja libre .1-.49 #}
+        default-router 10.20.16.1           {# gateway (active-gateway) — NO se entrega #}
+        dns-server {{ dns_resolver_primary }}
+        lease 1:0:0:0                       {# 1 día #}
+    exclude-address 10.20.16.1              {# gateway active-gateway #}
+    exclude-address 10.20.16.2              {# agg-01 SVI real #}
+    exclude-address 10.20.16.3              {# agg-02 SVI real #}
+
+{# ===================== TRÁNSITO AL FIREWALL (iBGP, LAG redundante) ===================== #}
+interface lag 100
+    description TO-FIREWALL-TRUST
+    no shutdown
+    routing
+    ip address {{ trunk_fw_ip }}/30          {# 10.20.200.1 (lado VSX) #}
+    lacp mode active
+interface 1/1/51
+    lag 100
+
+{# ===================== TRÁNSITO AL CLÚSTER 9012 ===================== #}
+interface lag 110
+    description TO-GW9012
+    no shutdown
+    routing
+    ip address {{ trunk_gw_ip }}/29          {# 10.20.210.1 (lado VSX) #}
+    lacp mode active
+interface 1/1/52
+    lag 110
+
+{# Rutas ESTÁTICAS a las VLAN wireless: el 9012 es su gateway (stub) ---- #}
+ip route 10.20.30.0/23 10.20.210.2          {# WMS   -> 9012 #}
+ip route 10.20.40.0/22 10.20.210.2          {# CORP  -> 9012 #}
+ip route 10.20.60.0/22 10.20.210.2          {# GUEST -> 9012 #}
+
+{# ===================== BGP (iBGP solo hacia el firewall) ===================== #}
+router bgp {{ bgp_asn }}                      {# ASN privado interno, p.ej. 65010 #}
+    bgp router-id {{ bgp_router_id }}
+    neighbor 10.20.200.2 remote-as {{ bgp_asn }}     {# iBGP con el Palo Alto #}
+    address-family ipv4 unicast
+        neighbor 10.20.200.2 activate
+        network 10.20.10.0/24
+        network 10.20.16.0/22
+        network 10.20.12.0/24
+        network 10.20.20.0/24
+        network 10.20.30.0/23                {# wireless, aprendidas por estática #}
+        network 10.20.40.0/22
+        network 10.20.60.0/22
+
+{# ===================== MC-LAG DOWNLINKS A LOS 48 ACCESOS =====================
+   Cada switch de acceso = un LAG multi-chassis (1 enlace a cada nodo VSX).
+   El miembro físico 1/1/N va al switch de acceso N. Trunk solo 10,11 (+native). #}
+{% for n in range(1, 49) %}
+interface lag {{ n }} multi-chassis
+    description TO-acc-sw-{{ '%02d' % n }}
+    no shutdown
+    no routing
+    vlan trunk native 99
+    vlan trunk allowed 10,11
+    lacp mode active
+interface 1/1/{{ n }}
+    lag {{ n }}
+{% endfor %}
+
+{# ===================== Spanning-tree, SNMP, acceso ===================== #}
+spanning-tree
+spanning-tree mode mstp
+spanning-tree config-name {{ site }}
+snmpv3 user {{ snmp_user }} auth sha auth-pass plaintext {{ vault_snmp_auth }} priv aes priv-pass plaintext {{ vault_snmp_priv }}
+user {{ breakglass_user }} group administrators password ciphertext {{ vault_breakglass_pass }}
+ssh server vrf default
+ssh server vrf mgmt
+no telnet-server

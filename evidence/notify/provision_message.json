@@ -1,0 +1,9 @@
+{
+  "generated": "2026-06-26T16:41:08+00:00",
+  "event": "provision",
+  "text": "\u2705 *Aprovisionamiento* (simulate) \u00b7 552 claimed \u00b7 2 skipped \u00b7 0 failed",
+  "alert": false,
+  "payload": {
+    "text": "\u2705 *Aprovisionamiento* (simulate) \u00b7 552 claimed \u00b7 2 skipped \u00b7 0 failed"
+  }
+}

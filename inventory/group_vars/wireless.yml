@@ -1,0 +1,35 @@
+---
+# ===========================================================================
+# Variables WLAN / clúster 9012 (templates/wlan_gateway.j2)
+# Hereda de all.yml: site. Las VLAN wireless tienen su L3 EN EL 9012 (no VSX).
+# ===========================================================================
+country_code: CL
+trunk_gw_vsx_ip: 10.20.210.1        # default gateway del clúster (egress al VSX)
+
+# VLAN de usuario wireless: el 9012 es su default gateway (.1)
+wireless_vlans:
+  - { id: 30, name: WMS,   gw_ip: 10.20.30.1, mask: "255.255.254.0" }   # /23
+  - { id: 40, name: CORP,  gw_ip: 10.20.40.1, mask: "255.255.252.0" }   # /22
+  - { id: 60, name: GUEST, gw_ip: 10.20.60.1, mask: "255.255.252.0" }   # /22
+
+# SSIDs (3). Cifrado simple, sin certificados. Banda por SSID (ver RF abajo).
+# WMS VISIBLE a propósito: las pistolas RF antiguas roamean mejor con el SSID
+# en los beacons (oculto = probe activo = roaming lento y más management).
+ssids:
+  - { name: MELI-CORP,  essid: MELI-CORP,  vlan: 40, opmode: wpa3-sae, passphrase_ref: "REF:vault/corp_psk",  bands: ["5ghz", "6ghz"] }
+  - { name: MELI-WMS,   essid: MELI-WMS,   vlan: 30, opmode: wpa3-sae, passphrase_ref: "REF:vault/wms_psk",  hidden: false, bands: ["2.4ghz", "5ghz"] }
+  - { name: MELI-GUEST, essid: MELI-GUEST, vlan: 60, opmode: wpa2-psk, passphrase_ref: "REF:vault/guest_psk", broadcast_filter: all, bands: ["2.4ghz", "5ghz"] }
+
+# RF (AP-635 = Wi-Fi 6E). Canales por AirMatch (automático), no manual.
+rf:
+  bands_enabled: ["2.4ghz", "5ghz", "6ghz"]
+  channel_width: { "2.4ghz": "20mhz", "5ghz": "40mhz", "6ghz": "40mhz" }
+  airmatch: true
+
+# Grupos de APs por zona (coinciden con central_group en inventory/devices.csv)
+ap_groups:
+  - { name: grp-aps-bodega-principal, zone: bodega-principal }
+  - { name: grp-aps-andenes,          zone: andenes }
+  - { name: grp-aps-oficinas,         zone: oficinas }
+  - { name: grp-aps-zonas-comunes,    zone: zonas-comunes }
+  - { name: grp-aps-perimetro,        zone: perimetro }

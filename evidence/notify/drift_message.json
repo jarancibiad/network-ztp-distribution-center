@@ -1,0 +1,9 @@
+{
+  "generated": "2026-06-26T16:41:08+00:00",
+  "event": "drift",
+  "text": "\u26a0\ufe0f *Drift detectado* 2026-06-26 \u00b7 1 unidad(es) cambiaron fuera de IaC: agg-01",
+  "alert": true,
+  "payload": {
+    "text": "\u26a0\ufe0f *Drift detectado* 2026-06-26 \u00b7 1 unidad(es) cambiaron fuera de IaC: agg-01"
+  }
+}

@@ -1,0 +1,89 @@
+{# ===========================================================================
+   Plantilla WLAN + clúster GATEWAY 9012 — AOS 10 (modo túnel)
+   --------------------------------------------------------------------------
+   AOS 10: la config del gateway/WLAN vive en GRUPOS de Aruba Central y se
+   entrega por API (UI groups), NO por template-group de CLI. Por eso esto se
+   renderiza a JSON que consume scripts/claim_aps.py contra la API de Central.
+
+   El clúster 9012 es: terminación de túneles de los APs + default gateway L3
+   de las VLAN de usuario wireless (30/40/60) + RADIUS-proxy (si hubiera 802.1X).
+   =========================================================================== #}
+{
+  "site": "{{ site }}",
+  "country_code": "{{ country_code | default('CL') }}",
+
+  "gateway_cluster": {
+    "name": "cl-mob-cd",
+    "persona": "mobility",
+    "members": ["gw-mob-01", "gw-mob-02"],
+    "redundancy": "active-active",
+    "uplink": {
+      "type": "lag-to-vsx",
+      "vlans_trunked": [30, 40, 60, 12],
+      "lacp": true
+    }
+  },
+
+  {# ---- SVIs: el 9012 es el default gateway de las VLAN wireless ---- #}
+  "l3_interfaces": [
+    {% for v in wireless_vlans %}
+    {
+      "vlan": {{ v.id }},
+      "name": "{{ v.name }}",
+      "ip": "{{ v.gw_ip }}",
+      "mask": "{{ v.mask }}",
+      "role": "user-gateway"
+    }{{ "," if not loop.last else "" }}
+    {% endfor %}
+  ],
+
+  {# ---- RF / radios (AP-635 = Wi-Fi 6E: 2.4/5/6 GHz; NO Wi-Fi 7) ----
+     Canales y potencia los optimiza AirMatch (RRM de Aruba), NO se fijan a
+     mano: con 500 APs, la asignación manual es inviable y peor. Ancho angosto
+     en alta densidad de almacén = más canales sin solापar = menos interferencia. #}
+  "rf": {
+    "bands_enabled": ["2.4ghz", "5ghz", "6ghz"],
+    "channel_assignment": "airmatch-automatic",
+    "channel_width": {
+      "2.4ghz": "20mhz",
+      "5ghz": "40mhz",
+      "6ghz": "40mhz"
+    },
+    "airmatch": { "enabled": true, "optimization": "interference" }
+  },
+
+  {# ---- WLANs (SSIDs): cada uno mapea a su VLAN, en modo TÚNEL al clúster ----
+     'band' por SSID: WMS sin 6GHz (pistolas RF antiguas suelen ser 2.4/5);
+     CORP en 5/6 (equipos modernos, fuera del 2.4 congestionado); GUEST 2.4/5. #}
+  "wlans": [
+    {% for s in ssids %}
+    {
+      "name": "{{ s.name }}",
+      "essid": "{{ s.essid }}",
+      "forward_mode": "tunnel",
+      "vlan": {{ s.vlan }},
+      "opmode": "{{ s.opmode }}",
+      {% if s.opmode in ['wpa3-sae', 'wpa2-psk'] %}
+      "passphrase_secret": "{{ s.passphrase_ref }}",
+      {% endif %}
+      "hide_ssid": {{ s.hidden | default(false) | tojson }},
+      "broadcast_filter": "{{ s.broadcast_filter | default('arp') }}",
+      "bands": {{ s.bands | default(['2.4ghz','5ghz']) | tojson }},
+      "max_clients_per_radio": {{ s.max_clients | default(128) }}
+    }{{ "," if not loop.last else "" }}
+    {% endfor %}
+  ],
+
+  {# ---- Grupos de APs por zona (RF) → del inventario (devices.csv) ---- #}
+  "ap_groups": [
+    {% for g in ap_groups %}
+    { "name": "{{ g.name }}", "zone": "{{ g.zone }}", "rf_profile": "{{ g.rf_profile | default('high-density') }}" }{{ "," if not loop.last else "" }}
+    {% endfor %}
+  ],
+
+  {# ---- Default route del clúster hacia el VSX (egress) ---- #}
+  "routing": {
+    "default_gateway": "{{ trunk_gw_vsx_ip }}",
+    "note": "el 9012 enruta entre VLAN wireless; lo demás sale al VSX (estático)"
+  }
+}
