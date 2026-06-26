@@ -6,3 +6,4 @@ pyyaml>=6.0
 # Descomentar al apuntar a infraestructura real:
 # pycentral>=1.4              # API de Aruba Central (claim, config, backup)
 # pan-os-python>=1.12         # API de PAN-OS (política, backup XML)
+#
