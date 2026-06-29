@@ -1,0 +1,60 @@
+name: nightly-backup
+
+# Backup diario programado: export de config, diff/drift, commit a Git y
+# notificación si hubo cambios. Es la operación cíclica del Tema F.
+# El "reloj" es este cron (no Ansible): GitHub Actions dispara, los scripts ejecutan.
+on:
+  schedule:
+    - cron: "0 6 * * *"      # todos los días 06:00 UTC
+  workflow_dispatch:          # también disparable a mano
+
+permissions:
+  contents: write             # para commitear los backups
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install pyyaml
+
+      - name: Export + diff/drift
+        id: backup
+        run: |
+          set +e
+          python3 scripts/backup_configs.py --simulate
+          echo "drift_rc=$?" >> "$GITHUB_OUTPUT"
+        # rc=2 -> hubo drift (no es fallo del job; lo usamos para notificar).
+        # En real: --real con ARUBA_CENTRAL_* y PANOS_API_KEY en secrets.
+
+      - name: Notificar drift
+        if: steps.backup.outputs.drift_rc == '2'
+        run: python3 scripts/notify.py --event drift --simulate
+        # En real: --real con SLACK_WEBHOOK_URL en secrets.
+
+      - name: Commit del backup (si hay cambios)
+        run: |
+          git config user.name  "ci-backup-bot"
+          git config user.email "ci-backup-bot@users.noreply.github.com"
+          git add backups/
+          if git diff --cached --quiet; then
+            echo "sin cambios en backups — no se commitea"
+          else
+            git commit -m "backup: $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi
+
+      - name: Publicar evidencia
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backup-evidence
+          path: evidence/backup/
