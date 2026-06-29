@@ -1,0 +1,79 @@
+name: ci
+
+# Pipeline de cambios: valida, provisiona en simulación (gate), respalda,
+# detecta drift, notifica y publica evidencia. Corre con cada push/PR.
+on:
+  push:
+    branches: [ main, "**" ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate-and-simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install jinja2 pyyaml
+
+      - name: Lint YAML (group_vars parsea)
+        run: |
+          python - <<'PY'
+          import glob, yaml, sys
+          bad = 0
+          for f in glob.glob("inventory/group_vars/*.yml"):
+              try:
+                  yaml.safe_load(open(f))
+                  print(f"  ok  {f}")
+              except yaml.YAMLError as e:
+                  bad += 1; print(f"  ERR {f}: {e}")
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Validar plantillas (render gate)
+        run: python3 tests/render_templates.py
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform fmt + validate (política del firewall)
+        run: |
+          cd terraform
+          terraform fmt -check
+          terraform init -backend=false
+          terraform validate
+
+      - name: Provisión simulada (gate)
+        run: python3 scripts/claim_devices.py --simulate
+
+      - name: Validación post-provisión (gate)
+        run: python3 scripts/validate_provisioning.py --simulate
+
+      - name: Backup + diff (simulado)
+        run: python3 scripts/backup_configs.py --simulate
+
+      - name: Dashboard de estado
+        run: python3 scripts/dashboard.py
+
+      - name: Notificar (simulado)
+        run: python3 scripts/notify.py --simulate
+        # En real: --real con SLACK_WEBHOOK_URL en secrets.
+
+      - name: Publicar evidencia
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence
+          path: evidence/
+
+# --- Modo real (contra Central/PAN-OS) ---
+# Añadir secrets en el repo: ARUBA_CENTRAL_CLIENT_ID, ARUBA_CENTRAL_CLIENT_SECRET,
+# ARUBA_CENTRAL_CUSTOMER_ID, PANOS_API_KEY, SLACK_WEBHOOK_URL; y pasar --real a los
+# scripts vía un env block. La lógica y el código son los mismos.
