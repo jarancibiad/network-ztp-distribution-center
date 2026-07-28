@@ -1,0 +1,11 @@
+! generado: 2026-07-28T08:10:52+00:00
+! unidad: grp-aps-perimetro
+{
+  "group": "grp-aps-perimetro",
+  "ssids": [
+    "MELI-CORP",
+    "MELI-WMS",
+    "MELI-GUEST"
+  ],
+  "forward_mode": "tunnel"
+}
