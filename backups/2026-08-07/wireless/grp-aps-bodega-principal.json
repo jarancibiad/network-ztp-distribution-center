@@ -1,0 +1,11 @@
+! generado: 2026-08-07T06:57:02+00:00
+! unidad: grp-aps-bodega-principal
+{
+  "group": "grp-aps-bodega-principal",
+  "ssids": [
+    "MELI-CORP",
+    "MELI-WMS",
+    "MELI-GUEST"
+  ],
+  "forward_mode": "tunnel"
+}
