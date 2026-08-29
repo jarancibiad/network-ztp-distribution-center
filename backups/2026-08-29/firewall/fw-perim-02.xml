@@ -1,0 +1,3 @@
+! generado: 2026-08-29T11:51:55+00:00
+! unidad: fw-perim-02
+<config><hostname>fw-perim-02</hostname><zones><zone>untrust</zone><zone>trust</zone></zones><bgp local-as="65010"/></config>
