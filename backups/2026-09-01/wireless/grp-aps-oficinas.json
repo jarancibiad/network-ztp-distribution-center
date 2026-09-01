@@ -1,0 +1,11 @@
+! generado: 2026-09-01T10:37:45+00:00
+! unidad: grp-aps-oficinas
+{
+  "group": "grp-aps-oficinas",
+  "ssids": [
+    "MELI-CORP",
+    "MELI-WMS",
+    "MELI-GUEST"
+  ],
+  "forward_mode": "tunnel"
+}
