@@ -1,0 +1,11 @@
+! generado: 2026-09-26T10:24:47+00:00
+! unidad: grp-aps-zonas-comunes
+{
+  "group": "grp-aps-zonas-comunes",
+  "ssids": [
+    "MELI-CORP",
+    "MELI-WMS",
+    "MELI-GUEST"
+  ],
+  "forward_mode": "tunnel"
+}
