@@ -1,0 +1,11 @@
+! generado: 2026-11-11T13:03:36+00:00
+! unidad: grp-aps-andenes
+{
+  "group": "grp-aps-andenes",
+  "ssids": [
+    "MELI-CORP",
+    "MELI-WMS",
+    "MELI-GUEST"
+  ],
+  "forward_mode": "tunnel"
+}
