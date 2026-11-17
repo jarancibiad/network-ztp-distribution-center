@@ -1,0 +1,419 @@
+{
+  "date": "2026-11-17",
+  "generated": "2026-11-17T15:00:40+00:00",
+  "units": [
+    {
+      "key": "agg-01",
+      "role": "aggregation",
+      "file": "2026-11-17/aggregation/agg-01.cfg",
+      "sha256": "85dad089962eeed2",
+      "bytes": 140
+    },
+    {
+      "key": "agg-02",
+      "role": "aggregation",
+      "file": "2026-11-17/aggregation/agg-02.cfg",
+      "sha256": "a0f160b4829e8437",
+      "bytes": 140
+    },
+    {
+      "key": "acc-sw-r01-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r01-1.cfg",
+      "sha256": "564e4c5f8fb3a67b",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r01-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r01-2.cfg",
+      "sha256": "ad748634267a7dfb",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r01-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r01-3.cfg",
+      "sha256": "4961704526c97371",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r01-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r01-4.cfg",
+      "sha256": "d38d9a2434efa895",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r02-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r02-1.cfg",
+      "sha256": "38a958c52f2fdc0a",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r02-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r02-2.cfg",
+      "sha256": "0c776a9f9a039e41",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r02-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r02-3.cfg",
+      "sha256": "9f00accbaae8b7eb",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r02-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r02-4.cfg",
+      "sha256": "7270fb3134eea4fd",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r03-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r03-1.cfg",
+      "sha256": "3b33c094d2958822",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r03-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r03-2.cfg",
+      "sha256": "1ea5524a3ec2217b",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r03-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r03-3.cfg",
+      "sha256": "efe52b59a39714ac",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r03-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r03-4.cfg",
+      "sha256": "7eb8b0d19d21213c",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r04-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r04-1.cfg",
+      "sha256": "fec36eb4d27581da",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r04-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r04-2.cfg",
+      "sha256": "8304135aa58d27d3",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r04-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r04-3.cfg",
+      "sha256": "29950ae254a0c564",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r04-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r04-4.cfg",
+      "sha256": "3bea82c480c4abe4",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r05-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r05-1.cfg",
+      "sha256": "26b067d60db8bcda",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r05-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r05-2.cfg",
+      "sha256": "fa9ba125b1db4a75",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r05-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r05-3.cfg",
+      "sha256": "5034de4446d384fb",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r05-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r05-4.cfg",
+      "sha256": "ed7c896dcbcb1d6c",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r06-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r06-1.cfg",
+      "sha256": "fb4e9faa1cfb8066",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r06-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r06-2.cfg",
+      "sha256": "8799700d370d0f27",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r06-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r06-3.cfg",
+      "sha256": "d3bade5e7722dc02",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r06-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r06-4.cfg",
+      "sha256": "be4626bb36a4f8ff",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r07-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r07-1.cfg",
+      "sha256": "f1e565554f092614",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r07-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r07-2.cfg",
+      "sha256": "36dd2a0a32746fb8",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r07-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r07-3.cfg",
+      "sha256": "ca0a3a55c3adbb24",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r07-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r07-4.cfg",
+      "sha256": "1add30857b0cfc66",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r08-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r08-1.cfg",
+      "sha256": "970564c6c9559fb7",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r08-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r08-2.cfg",
+      "sha256": "0bb5e0c2f78c6d51",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r08-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r08-3.cfg",
+      "sha256": "4badfdb5c55c4e57",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r08-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r08-4.cfg",
+      "sha256": "646d262f3cdc8ae9",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r09-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r09-1.cfg",
+      "sha256": "ad4d70df23b88dc6",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r09-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r09-2.cfg",
+      "sha256": "4e1df56739a9b723",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r09-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r09-3.cfg",
+      "sha256": "cb8222a7ed8b87a1",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r09-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r09-4.cfg",
+      "sha256": "53a5467fdbf6a270",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r10-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r10-1.cfg",
+      "sha256": "5d05cc9d2199bd8c",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r10-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r10-2.cfg",
+      "sha256": "b7416d62c36a373d",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r10-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r10-3.cfg",
+      "sha256": "cadd1c51136843dc",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r10-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r10-4.cfg",
+      "sha256": "b567c746bc457a2b",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r11-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r11-1.cfg",
+      "sha256": "d69e0ef9dc7d63d4",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r11-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r11-2.cfg",
+      "sha256": "2fddf3a5b6b3d282",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r11-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r11-3.cfg",
+      "sha256": "954b3f2c96c1b90a",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r11-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r11-4.cfg",
+      "sha256": "96cbb987d3954006",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r12-1",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r12-1.cfg",
+      "sha256": "dcb33c47ea65a26d",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r12-2",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r12-2.cfg",
+      "sha256": "5f1f55200929953a",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r12-3",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r12-3.cfg",
+      "sha256": "a92a9228c54fc741",
+      "bytes": 152
+    },
+    {
+      "key": "acc-sw-r12-4",
+      "role": "access",
+      "file": "2026-11-17/access/acc-sw-r12-4.cfg",
+      "sha256": "5611a4e968b071d3",
+      "bytes": 152
+    },
+    {
+      "key": "grp-aps-bodega-principal",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/grp-aps-bodega-principal.json",
+      "sha256": "d8fc698334d955aa",
+      "bytes": 211
+    },
+    {
+      "key": "grp-aps-andenes",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/grp-aps-andenes.json",
+      "sha256": "9fa236b4070842aa",
+      "bytes": 193
+    },
+    {
+      "key": "grp-aps-oficinas",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/grp-aps-oficinas.json",
+      "sha256": "e6d5ae3d40949968",
+      "bytes": 195
+    },
+    {
+      "key": "grp-aps-zonas-comunes",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/grp-aps-zonas-comunes.json",
+      "sha256": "fecd34c094d5d7a3",
+      "bytes": 205
+    },
+    {
+      "key": "grp-aps-perimetro",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/grp-aps-perimetro.json",
+      "sha256": "6843d9b38946a509",
+      "bytes": 197
+    },
+    {
+      "key": "gw-mob-01",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/gw-mob-01.cfg",
+      "sha256": "5e8fef5ced93851b",
+      "bytes": 146
+    },
+    {
+      "key": "gw-mob-02",
+      "role": "wireless",
+      "file": "2026-11-17/wireless/gw-mob-02.cfg",
+      "sha256": "a649b07b2a818f3d",
+      "bytes": 146
+    },
+    {
+      "key": "fw-perim-01",
+      "role": "firewall",
+      "file": "2026-11-17/firewall/fw-perim-01.xml",
+      "sha256": "9b61d8f0f7f61f07",
+      "bytes": 186
+    },
+    {
+      "key": "fw-perim-02",
+      "role": "firewall",
+      "file": "2026-11-17/firewall/fw-perim-02.xml",
+      "sha256": "3f8957c15b408cfe",
+      "bytes": 186
+    }
+  ]
+}
